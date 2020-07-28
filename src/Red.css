@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./images/bg_sky.jpg');
+    background-size: 40%;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+* {
+    user-select: none;
+}
+
+.floor {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    bottom: -78vh;
+}
+
+.alice {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 80%;
+    max-width: 450px;
+    /*height: 783px / 2*/
+    z-index: 1;
+}
+
+.alice:before {
+    content: " ";
+    display: block;
+    padding-top: 87%;
+}
+
+.alice img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.scenery {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#foreground {
+    z-index: 1;
+}
+
+#foreground, .background2 {
+    transform: translateX(100%);
+}
+
+#palm {
+    top: 0;
+    left: 10%;
+}
+
+#pawn {
+    top: 5%;
+    left: 30%
+}
+
+.foreground2, .background2 {
+    transform: translateX(100%);
+}
+
+.pawn {
+    top: -5%;
+    left: 15%;
+    width: 10%;
+}
+
+.pawn2 {
+    top: -10%;
+    left: 80%;
+    width: 20%;
+    z-index: 5
+}
+
+.pawn_down {
+    top: 20%;
+    left: -40%;
+    width: 15%;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.smallpalm {
+    top: -5%;
+    left: -20%;
+    width: 8%;
+}
+
+.bush {
+    top: 25%;
+    left: -80%;
+    width: 8%;
+}
+
+.bird {
+    top: -70%;
+    left: -80%;
+    width: 5%;
+}
